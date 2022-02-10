@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transitioning multiple properties</title>
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+      button {
+        padding: 20px;
+        display: block;
+        width: 50%;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        margin: 20px auto;
+        border: 7px solid tomato;
+        background-color: chocolate;
+        transition-property: background-color, border-color;
+        /* transition property transition two properties */
+        transition-duration: 1s, 2s;
+        /* first value applied to first property second value to second property which is border colour */
+        transition-delay: 0s, 1s;
+        /* background colour start after one second border colour after one second */
+      }
+      button:hover {
+        background-color: tomato;
+        border-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Visit the website</button>
+  </body>
+</html>
