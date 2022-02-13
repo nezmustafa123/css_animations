@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fading</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 500px;
+        background-image: url(anthony.jpg);
+        background-size: cover;
+        background-position: 0%;
+        /* these are properties to be animated */
+        transition: background-position 10s;
+      }
+      .container:hover {
+        background-position: 50%;
+      }
+      .container:hover .text {
+        opacity: 1;
+      }
+
+      .text {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 10s;
+      }
+      .text h1 {
+        font-size: 3rem;
+        padding: 20px;
+      }
+      .text p {
+        width: 70%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>Come to Paris</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem suscipit
+          repellat autem ipsa vitae, unde ex voluptatem ut nisi ullam. Quos
+          quidem id quod est sit expedita provident facilis iusto!
+        </p>
+      </div>
+    </div>
+    <div class="car-container">
+      <h3>Cards</h3>
+      <button>Hover me</button>
+      <div class="card">
+        <div class="card-img">
+          <img src="1.jpg" alt="" />
+          <div class="card-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              similique dolore maiores atque, eos fugit, saepe molestiae optio,
+              corporis voluptas possimus non odio sed ipsum. Doloremque in cum
+              ullam earum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="1.jpg" alt="" />
+          <div class="card-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              similique dolore maiores atque, eos fugit, saepe molestiae optio,
+              corporis voluptas possimus non odio sed ipsum. Doloremque in cum
+              ullam earum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
