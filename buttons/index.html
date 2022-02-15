@@ -24,12 +24,83 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+        margin: 10px;
+      }
+
+      #one {
+        background-color: #fff;
+        color: teal;
+        transition-property: background-color, color, border;
+        transition-duration: 0.4s;
+        border: 3px solid transparent;
+        /* get rid of weird effect on border */
+      }
+      #one:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+      }
+
+      #two {
+        /* relative to container */
+        position: relative;
+      }
+      #two:hover:before {
+        width: 100%;
+      }
+
+      #two:before {
+        content: "";
+        height: 3px;
+        width: 0%;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: width 8s;
+      }
+      #two:hover:after {
+        height: 100%;
+      }
+      #two:after {
+        content: "";
+        height: 0%;
+        width: 3px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: height 8s;
+      }
+
+      #three {
+        position: relative;
+      }
+      #three:before {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      #three:after {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
       }
     </style>
   </head>
   <body>
     <div class="button-container">
-      <button>Hover me</button>
+      <button id="one">Hover me</button>
+      <button id="two">Hover me</button>
+      <button id="three">Hover me</button>
     </div>
   </body>
 </html>
