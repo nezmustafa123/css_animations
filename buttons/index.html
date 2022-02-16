@@ -76,7 +76,7 @@
       #three {
         position: relative;
         letter-spacing: 0px;
-        transition: letter-spacing 0.3s;
+        transition: letter-spacing 8s;
       }
 
       #three:hover {
@@ -95,7 +95,7 @@
         position: absolute;
         top: 0px;
         right: 0px;
-        transition: width 0.3s;
+        transition: width 1s;
       }
       #three:after {
         content: "";
@@ -105,7 +105,42 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        transition: width 0.3s;
+        transition: width 1s;
+      }
+
+      #four {
+        position: relative;
+      }
+      #four:hover:before,
+      #four:hover:after {
+        height: 100%;
+        width: 100%;
+      }
+
+      #four:before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border: 2px solid #fff;
+        border-color: #fff #fff transparent transparent;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        transition-property: height, width;
+        transition-duration: 5s;
+      }
+      #four:after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        border-color: transparent transparent #fff #fff;
+        /* top colour transparent right transprent bottom left white */
+        transition-property: height, width;
+        transition-duration: 5s;
       }
     </style>
   </head>
@@ -114,6 +149,7 @@
       <button id="one">Hover me</button>
       <button id="two">Hover me</button>
       <button id="three">Hover me</button>
+      <button id="four">Hover me</button>
     </div>
   </body>
 </html>
