@@ -145,7 +145,7 @@
 
       #five {
         border: 1px solid #fff;
-        transition: box-shadow 0.4s;
+        transition: box-shadow 1s;
       }
       #five:hover {
         box-shadow: inset 0px 0px 15px #fff;
@@ -158,12 +158,29 @@
         border: 1px solid #fff;
         top: 0px;
         left: 0;
-        transition: transform 0.3s, border-color 0.3s;
+        transition: transform 1s, border-color 1s;
       }
 
       #five:hover:before {
         transform: scale(1.2);
         border-color: transparent;
+      }
+      #six {
+        border: 1px solid #fff;
+        position: relative;
+      }
+      #six:before {
+        content: "";
+        height: 100%;
+        width: 10%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #fff;
+        transition: width 0.3s;
+      }
+      #six:hover:before {
+        width: 100%;
       }
     </style>
   </head>
@@ -174,6 +191,7 @@
       <button id="three">Hover me</button>
       <button id="four">Hover me</button>
       <button id="five">Hover me</button>
+      <button id="six">Hover me</button>
     </div>
   </body>
 </html>
