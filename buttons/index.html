@@ -168,6 +168,8 @@
       #six {
         border: 1px solid #fff;
         position: relative;
+        transition: color 0.3s;
+        overflow: hidden;
       }
       #six:before {
         content: "";
@@ -178,9 +180,14 @@
         left: 0px;
         background-color: #fff;
         transition: width 0.3s;
+        z-index: -1;
       }
       #six:hover:before {
         width: 100%;
+        /* change to width 100%; */
+      }
+      #six:hover {
+        color: teal;
       }
     </style>
   </head>
