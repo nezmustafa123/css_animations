@@ -193,15 +193,26 @@
       #seven {
         border: 1px solid #fff;
         position: relative;
+        overflow: hidden;
+        transition: color 0.3s;
+      }
+      #seven:hover {
+        color: teal;
+      }
+      #seven:hover:before {
+        width: 200%;
       }
       #seven:before {
         content: "";
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 150%;
         position: absolute;
         background-color: #fff;
-        top: 0px;
-        left: 0px;
+        top: -18px;
+        left: -70px;
+        transform: rotate(10deg);
+        transition: width 10s ease-in;
+        z-index: -1;
       }
     </style>
   </head>
