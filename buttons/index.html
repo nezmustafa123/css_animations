@@ -250,6 +250,40 @@
       }
       #nine {
         border: 1px solid #fff;
+        transition: border-radius 0.3s;
+      }
+      #nine:hover {
+        border-radius: 50px;
+      }
+
+      #ten {
+        border: 1px solid #fff;
+        position: relative;
+        overflow: hidden;
+        transition: color 5s;
+      }
+      #ten:hover {
+        color: teal;
+      }
+      #ten:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 10%;
+        height: 100%;
+        background-color: #fff;
+        transform: rotate(30deg);
+        border-radius: 80%;
+        transition-property: height, width, border-radius;
+        transition-duration: 5s;
+        z-index: -1;
+      }
+
+      #ten:hover:before {
+        width: 200%;
+        height: 300%;
+        border-radius: 0px;
       }
     </style>
   </head>
@@ -264,6 +298,7 @@
       <button id="seven">Hover me</button>
       <button id="eight">Hover me</button>
       <button id="nine">Hover me</button>
+      <button id="ten">Hover me</button>
     </div>
   </body>
 </html>
