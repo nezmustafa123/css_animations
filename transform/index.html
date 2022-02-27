@@ -16,13 +16,17 @@
         background-repeat: no-repeat;
         border: 5px solid #fff;
         transition: transform 3s ease-out;
-        transform-origin: top left;
+        /* transform-origin: top right; */
+        /* set value using pixels */
+        transform-origin: -100px 50%;
+
+        /* by default is centre */
       }
       .box:hover {
         /* //function rotates element */
-        /* transform: rotate(80deg); */
+        transform: rotate(80deg);
         /* transform: scale(1.5, 1.5); */
-        transform: skewY(20deg);
+        /* transform: skewY(20deg); */
         /* transform: skewY(10deg, 5deg); */
         /* 10 degrees horizontally 5 degrees vertically */
       }
