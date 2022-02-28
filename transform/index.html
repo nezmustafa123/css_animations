@@ -18,17 +18,19 @@
         transition: transform 3s ease-out;
         /* transform-origin: top right; */
         /* set value using pixels */
-        transform-origin: -100px 50%;
+        /* transform-origin: -100px 50%; */
+        /* top left */
 
         /* by default is centre */
       }
       .box:hover {
         /* //function rotates element */
-        transform: rotate(80deg);
+        /* transform: rotate(80deg); */
         /* transform: scale(1.5, 1.5); */
         /* transform: skewY(20deg); */
         /* transform: skewY(10deg, 5deg); */
-        /* 10 degrees horizontally 5 degrees vertically */
+        /* 10 degrees horizontally 5 degrees vertically multiple transformations at same time */
+        transform: rotate(20deg) scale(1.5);
       }
       /* scale function one or two values specify amount of scaling applied in each direcition */
     </style>
