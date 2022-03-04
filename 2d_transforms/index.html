@@ -53,6 +53,15 @@
       #three:hover img {
         transform: scale(1.1);
       }
+      #four .card-img {
+        overflow: hidden;
+      }
+      #four img {
+        transition: transform 0.3s;
+      }
+      #four:hover img {
+        transform: scale(2);
+      }
     </style>
   </head>
   <body>
@@ -68,6 +77,11 @@
         </div>
       </div>
       <div class="card" id="three">
+        <div class="card-img">
+          <img src="1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card" id="four">
         <div class="card-img">
           <img src="1.jpg" alt="" />
         </div>
