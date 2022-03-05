@@ -57,10 +57,20 @@
         overflow: hidden;
       }
       #four img {
-        transition: transform 0.3s;
+        transition: transform 6s, filter 6s;
       }
       #four:hover img {
         transform: scale(2);
+        filter: blur(5px);
+      }
+      #give .card-img {
+        overflow: hidden;
+      }
+      #five img {
+        transition: transform 0.3s;
+      }
+      #five:hover img {
+        transform: scale(1.1) rotate(10deg);
       }
     </style>
   </head>
@@ -82,6 +92,11 @@
         </div>
       </div>
       <div class="card" id="four">
+        <div class="card-img">
+          <img src="1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card" id="five">
         <div class="card-img">
           <img src="1.jpg" alt="" />
         </div>
