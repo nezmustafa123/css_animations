@@ -30,6 +30,18 @@
         background-color: rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(0, 0, 0, 0.1);
       }
+      .text:nth-child(2n + 1) {
+        transform: skewX(10deg);
+      }
+      .text:nth-child(2n + 1) p {
+        transform: skewX(-10deg);
+      }
+      .text:nth-child(2n + 2) {
+        transform: skewC(-10deg);
+      }
+      .text:nth-child(2n + 2) p {
+        transform: skewC(10deg);
+      }
       .text p {
         padding: 10px 25px;
         color: #fff;
