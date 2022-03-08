@@ -4,7 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sliding door</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ececec;
+      }
+      .container {
+        width: 200px;
+        margin: 50px auto;
+        background-color: #fff;
+        position: relative;
+      }
+      .content h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+      }
+      .content p {
+        padding: 20px;
+      }
+      #main {
+        background-color: teal;
+        color: #fff;
+      }
+      #second {
+        background-color: coral;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="content" id="main">
+        <h2>Main</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quod
+          sapiente facilis illo architecto eius quia adipisci magnam deleniti
+          vel temporibus suscipit laudantium reprehenderit voluptas soluta modi,
+          corporis laboriosam cum!
+        </p>
+      </div>
+      <div class="content" id="second">
+        <h2>Second</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eius
+          nulla ab, consequatur explicabo at ducimus dignissimos quasi cumque
+          vel quas excepturi ipsam provident vero dolore voluptas iure numquam.
+          Labore.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
