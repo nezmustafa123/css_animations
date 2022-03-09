@@ -15,7 +15,7 @@
         background-color: #ececec;
       }
       .container {
-        width: 200px;
+        width: 400px;
         margin: 50px auto;
         background-color: #fff;
         position: relative;
@@ -39,6 +39,11 @@
         width: 100%;
         top: 0px;
         left: 0;
+        transform: translateX(-400px);
+        transition: transform 0.3s;
+      }
+      .container:hover #second {
+        transform: translateX(0px);
       }
     </style>
   </head>
