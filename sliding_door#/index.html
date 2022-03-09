@@ -19,6 +19,7 @@
         margin: 50px auto;
         background-color: #fff;
         position: relative;
+        overflow: hidden;
       }
       .content h2 {
         padding: 20px;
@@ -38,11 +39,12 @@
         position: absolute;
         width: 100%;
         top: 0px;
-        left: 0;
+        left: 0px;
         transform: translateX(-400px);
-        transition: transform 0.3s;
+        transition: transform 1s cubic-bezier(1, 0.02, 0.95, 0.56);
       }
       .container:hover #second {
+        /* when element is hovered translate x 0 */
         transform: translateX(0px);
       }
     </style>
