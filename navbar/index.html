@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      #header {
+        background-color: crimson;
+      }
+      #header a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px;
+        transition: background-color 0.3s;
+      }
+      #header a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      #main-nav {
+        text-align: right;
+      }
+      #main-nav li {
+        display: inline-block;
+      }
+      #second-nav {
+        width: 400px;
+        border: 1px solid #fff;
+      }
+      #second-nav a {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav id="main-nav">
         <ul>
           <li><a href="">Home</a></li>
@@ -17,9 +51,9 @@
       </nav>
       <nav id="second-nav">
         <ul>
-          <li><a href="">Cat 1</a></li>
-          <li><a href="">Cat 2</a></li>
-          <li><a href="">Cat 3</a></li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
+          <li><a href="">Category 3</a></li>
         </ul>
       </nav>
     </header>
