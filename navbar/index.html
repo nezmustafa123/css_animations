@@ -44,6 +44,18 @@
       #second-nav a {
         display: block;
       }
+      #nav-toggle {
+        background-color: rgba(0, 0, 0, 0.3);
+        min-height: 40px;
+        position: absolute;
+        top: 10px;
+        right: -50px;
+      }
+      #nav-toggle span {
+        height: 5px;
+        width: 40px;
+        background-color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -56,6 +68,9 @@
         </ul>
       </nav>
       <nav id="second-nav">
+        <div id="nav-toggle">
+          <span> </span>
+        </div>
         <ul>
           <li><a href="">Category 1</a></li>
           <li><a href="">Category 2</a></li>
