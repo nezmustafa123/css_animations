@@ -2,116 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
     <style>
       * {
-        padding: 0px;
         margin: 0px;
-        box-sizing: border-box;
+        padding: 0px;
       }
-      #header {
-        background-color: rgba(28, 114, 226, 0.521);
+      header {
+        background-color: crimson;
       }
-      #header a {
-        color: #fff;
-        text-decoration: none;
-        display: inline-block;
+      header ul {
+        list-style-type: none;
+      }
+      header a {
+        display: block;
         padding: 20px;
+        color: #fff;
+        font-size: 1.1em;
+        text-decoration: none;
         transition: background-color 0.3s;
       }
-      #header a:hover {
+      header a:hover {
         background-color: rgba(0, 0, 0, 0.1);
       }
-
-      #main-nav {
+      .navbar-main {
+        width: 70%;
+        margin: auto;
         text-align: right;
       }
-      #main-nav li {
+      .navbar-main li {
         display: inline-block;
       }
-      #second-nav {
+      .navbar-second {
+        width: 420px;
+        background-color: crimson;
         position: absolute;
         top: 0px;
         left: 0px;
-        background-color: rgba(28, 114, 226, 0.521);
+        transform: translateX(-420px);
+        transition: transform 0.3s cubic-bezier(0.94, 0.06, 0.78, 0.74);
         min-height: 100vh;
-        width: 400px;
-        /* border: 1px solid #fff; */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s;
-        transform: translateX(-400px);
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
       }
-      #second-nav a {
-        display: block;
-      }
-      #nav-toggle {
-        background-color: rgba(0, 0, 0, 0.3);
-        min-height: 40px;
-        position: absolute;
-        top: 10px;
-        right: -50px;
+      .navbar-second .nav-toggle {
+        min-height: 50px;
         width: 50px;
-        padding: 2px;
+        position: absolute;
+        top: 5px;
+        right: -55px;
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
         transition: transform 0.3s;
       }
-      #nav-toggle span {
-        height: 3px;
-        width: 40px;
-        background-color: #fff;
+      .nav-toggle span {
         display: block;
-        position: absolute;
-        top: 45%;
-        left: 10%;
-      }
-      #nav-toggle span:before {
-        content: "";
-        width: 40px;
         height: 3px;
+        width: 70%;
+        margin: auto;
         background-color: #fff;
-        display: block;
         position: relative;
+        top: 23px;
+      }
+      .nav-toggle span:before {
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
         top: -10px;
       }
-
-      #nav-toggle span:after {
+      .nav-toggle span:after {
         content: "";
-        width: 40px;
         height: 3px;
+        width: 100%;
         background-color: #fff;
-        display: block;
-        position: relative;
-        top: 8px;
+        position: absolute;
+        top: 10px;
       }
-      #header:hover #second-nav {
-        transform: translateX(0px);
+
+      /*        show the second navbar*/
+      header.open .navbar-second {
+        transform: translateX(0);
       }
-      #header.open #nav-toggle {
+      header.open .nav-toggle {
         transform: scale(0.8);
       }
     </style>
   </head>
   <body>
-    <header id="header" class="open">
-      <nav id="main-nav">
+    <header class="" id="header">
+      <div class="navbar-main">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-      </nav>
-      <nav id="second-nav">
-        <div id="nav-toggle">
-          <span> </span>
+      </div>
+      <div class="navbar-second">
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
         </div>
         <ul>
           <li><a href="">Category 1</a></li>
           <li><a href="">Category 2</a></li>
           <li><a href="">Category 3</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
+
     <script src="script.js"></script>
   </body>
 </html>
