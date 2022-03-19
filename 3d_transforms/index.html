@@ -18,12 +18,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 5px solid #fff;
-        transition: transform 0.3s;
+        transition: transform 19s;
         /* smooth transition */
       }
       .box:hover {
         /* 3d perspective */
-        transform: rotateX(30deg);
+        /* transform: rotateX(360deg); */
+        /* transform: rotate3d(-45deg); */
+        /* combine all values into rotate3d commas seperated values x y and z axis rotate angle */
+        transform: rotate3d(1, 1, 1, -45deg);
+        /* each value is specific axis */
+        /* set direction of rotation by changing values form zero to one */
       }
     </style>
   </head>
