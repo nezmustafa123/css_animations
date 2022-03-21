@@ -18,7 +18,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 5px solid #fff;
-        transition: transform 20s;
+        transition: transform 2s;
         /* smooth transition */
         backface-visibility: hidden;
       }
@@ -30,7 +30,12 @@
         /* transform: rotate3d(1, 1, 1, -30deg); */
         /* each value is specific axis */
         /* set direction of rotation by changing values form zero to one */
-        transform: rotateX(180deg);
+        /* transform: rotateX(180deg); */
+        /* 3d transforms */
+        /* transform: translateZ(100px); */
+        /* translation for z axis */
+        transform: translate3d(20px, 50px, 100px);
+        /* combine all three x axis y axis z axis */
       }
     </style>
   </head>
