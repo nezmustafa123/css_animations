@@ -9,6 +9,7 @@
       }
       .container {
         perspective: 800px;
+        perspective-origin: bottom right; /* position at which viewer is looking at three dimensional space */
       }
       .box {
         height: 300px;
@@ -18,7 +19,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 5px solid #fff;
-        transition: transform 20s;
+        transition: transform 2s;
         /* smooth transition */
         backface-visibility: hidden;
       }
@@ -37,7 +38,10 @@
         /* transform: translate3d(30px, 50px, 100px); */
         /* combine all three x axis y axis z axis */
         /* scale elmeents in 3d space */
-        transform: scaleX(1.5);
+        /* transform: scaleX(1.5); */
+        /* scale on x axis using scale option */
+        /* transform: scale3d(1.2, 0.4, 1.3); */
+        transform: rotateX(30deg);
       }
     </style>
   </head>
