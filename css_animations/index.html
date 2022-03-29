@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Animation</title>
     <style>
       * {
         box-sizing: border-box;
@@ -10,16 +10,20 @@
       body {
         background-color: gainsboro;
       }
-      .container {
-      }
+      /* .container {
+      } */
       .box {
+        position: relative;
         background-color: chocolate;
         height: 200px;
         width: 50%;
         margin: 50px auto;
         border: 5px dashed #fff;
-        animation-name: anim;
-        animation-duration: 5s;
+        animation-name: an2;
+        animation-duration: 9s;
+        animation-delay: 6s;
+        animation-iteration-count: 3;
+        /* make animation count repeat certain times times */
       }
       .tr {
         transition: background-color 5s;
@@ -34,7 +38,8 @@
         animation: an2 1s infinite alternate cubic-bezier(1, -1.43, 1, 1.55);
       }
       @keyframes bg {
-        keygframes then give animation a name 0% {
+        /* keyframes then give animation a name */
+        0% {
           background-color: chocolate;
         }
         50% {
@@ -60,8 +65,8 @@
   <body>
     <div class="container">
       <div class="box tr"></div>
-      <div class="box an"></div>
-      <div class="box an2"></div>
+      <!-- <div class="box an"></div>
+      <div class="box an2"></div> -->
     </div>
   </body>
 </html>
