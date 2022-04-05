@@ -22,12 +22,13 @@
         animation-name: an2;
         animation-duration: 4s;
         animation-delay: 6s;
-        animation-iteration-count: infinite;
+        /* animation-iteration-count: infinite; */
         /* make animation count repeat a certain amount of time */
         animation-direction: reverse;
         /* animation direction goes in reverse  */
         animation-timing-function: linear;
-        animation-play-state: paused;
+        animation-fill-mode: forwards;
+        /* animation starts at zero percent at 100% returns to initial state forwards retains style values set by last keyframe */
       }
       .box:hover {
         animation-play-state: running;
