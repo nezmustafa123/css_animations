@@ -19,16 +19,17 @@
         width: 60%;
         margin: 50px auto;
         border: 3px dashed #fff;
-        animation-name: an2;
+        /* animation-name: an2;
         animation-duration: 4s;
-        animation-delay: 6s;
+        animation-delay: 6s; */
         /* animation-iteration-count: infinite; */
         /* make animation count repeat a certain amount of time */
-        animation-direction: reverse;
+        /* animation-direction: reverse; */
         /* animation direction goes in reverse  */
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
+        /* animation-timing-function: linear;
+        animation-fill-mode: forwards; */
         /* animation starts at zero percent at 100% returns to initial state forwards retains style values set by last keyframe */
+        animation: an2 2s infinite;
       }
       .box:hover {
         animation-play-state: running;
@@ -72,9 +73,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="box tr"></div>
-      <div class="box an"></div>
-      <div class="box an bg an2"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
   </body>
 </html>
